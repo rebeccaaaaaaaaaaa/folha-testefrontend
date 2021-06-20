@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CAROUSEL SLIDER LIBRARY - Flickity -->
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <link rel="stylesheet" href="./css/grid_system.css">
+    <link rel="stylesheet" href="./css/custom.css">
+    <title> TESTE - Frontend - Folha de São Paulo</title>
+</head>
+<body>
+    <header>
+        <div class="container bg-header">
+            <div class="row">
+                <div class="col-lg-2">
+                    <div id="menu" class="sidenav">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                        <a href="#">lorem ipsum </a>
+                        <a href="#">lorem ipsum </a>
+                        <a href="#">lorem ipsum </a>
+                        <a href="#">lorem ipsum </a>
+                      </div>
+                
+                      <span class="hamburguer-icon" onclick="openNav()">&#9776;</span>
+                </div>
+                <div class="logo-block col-lg-7 text-center">
+                    <picture>
+                        <img src="./images/logo.png" alt="Logo Folha" 
+                             class="img-fluid" loading="lazy">
+                    </picture>
+                    <small> o site de teste para novos webs</small>
+                </div>
+                <div class="col-lg-2">
+                    <picture class="social-pic">
+                       <a href="" class="facebook-text" alt="Ir para o facebook">
+                           <img src="./images/facebook.png" alt="Logo Facebook"> <span> Curtir </span></a>
+                       <a href="" class="twitter-text" alt="Ir para o twitter">
+                           <img src="./images/twitter.png" alt="Logo Twitter"> <span> Seguir</span></a>
+                    </picture>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="py-5 slider">
+            <div class="container">
+                <h2 class="sr-only">Banner</h2>
+                <div class="carousel" data-flickity='{ "imagesLoaded": true }'>
+                    <div class="carousel-cell">
+                        <picture>
+                            <source media="(max-width:425px)" 
+                                srcset="./images/image_rotate.png" />
+                            <img
+                                class="carousel-cell-image"
+                                src="./images/image_rotate.png"
+                                alt=" Imagem Banner Slider Flickity"
+                                loading="lazy"
+                            />
+                        </picture>
+                        <div class="caption">
+                            <span> LOREM IPSUM</span>
+                            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br/>
+                                sed do eiusmod tempor incididunt.</p>
+                        </div>
+                    </div>
+        
+                    <div class="carousel-cell">
+                        <picture>
+                            <source media="(max-width:425px)"  srcset="./images/image_rotate.png" />/>
+                            <img class="carousel-cell-image"  src="./images/image_rotate.png" alt="Imagem Banner Slider Flickity" loading="lazy" />
+                        </picture>
+                        <div class="caption">
+                            <span> LOREM IPSUM</span>
+                            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br/>
+                                sed do eiusmod tempor incididunt.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="py-5 first-section-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h2> lorem ipsum </h2>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="card">
+                            <picture>
+                                <img src="./images/highlight-01.png" alt="Texto alternativo Genérico" class="img-fluid" loading="lazy">
+                            </picture>
+                            <div class="card-caption">
+                                <span> lorem ipsum </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="card">
+                            <picture>
+                                <img src="./images/highlight-02.png" alt="Texto alternativo Genérico" class="img-fluid" loading="lazy">
+                            </picture>
+                            <div class="card-caption">
+                                <span> lorem ipsum </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="card">
+                            <picture>
+                                <img src="./images/highlight-03.png" alt="Texto alternativo Genérico" class="img-fluid" loading="lazy">
+                            </picture>
+                            <div class="card-caption">
+                                <span> lorem ipsum </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-5 second-section-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h2> lorem ipsum </h2>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <div class="card">
+                            <picture>
+                                <img src="./images/divoltis_porris-01.png" alt="Texto alternativo Genérico" class="img-fluid" loading="lazy">
+                            </picture>
+                            <div class="card-description">
+                                <h2> lorem ipsum</h2>
+                                <p> loremLaborum laborum aliquip cillum in cupidatat ipsum.
+                                    Cillum id eiusmod enim laborum ad do sunt esse.</p>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <picture>
+                                <img src="./images/divoltis_porris-02.png" alt="Texto alternativo Genérico" class="img-fluid" loading="lazy">
+                            </picture>
+                            <div class="card-description">
+                                <h2> lorem ipsum</h2>
+                                <p> loremLaborum laborum aliquip cillum in cupidatat ipsum.
+                                    Cillum id eiusmod enim laborum ad do sunt esse.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <div class="card">
+                            <picture>
+                                <img src="./images/divoltis_porris-03.png" alt="Texto alternativo Genérico" class="img-fluid" loading="lazy">
+                            </picture>
+                            <div class="card-description">
+                                <h2> lorem ipsum</h2>
+                                <p> loremLaborum laborum aliquip cillum in cupidatat ipsum.
+                                    Cillum id eiusmod enim laborum ad do sunt esse.</p>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <picture>
+                                <img src="./images/divoltis_porris-04.png" alt="Texto alternativo Genérico" class="img-fluid" loading="lazy">
+                            </picture>
+                            <div class="card-description">
+                                <h2> lorem ipsum</h2>
+                                <p> loremLaborum laborum aliquip cillum in cupidatat ipsum.
+                                    Cillum id eiusmod enim laborum ad do sunt esse.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 publicidade-block">
+                       <div class="publicidade-column">
+                        <small> Publicidade </small>
+                        <picture>
+                            <img src="./images/ads-300x600.png" alt="Texto alternativo Genérico" class="img-fluid" loading="lazy"/>
+                        </picture>
+                       </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="./js/script.js"></script>
+    <!-- CDN async Flickity Slider -->
+    <script async src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+</body>
+</html>
