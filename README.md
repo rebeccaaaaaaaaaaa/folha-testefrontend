@@ -10,7 +10,7 @@
 
 
 
-### Ferramentas e linguagens
+### Ferramentaas e linguagens
 
 1. HTML5, CSS3, JavaScript e Boostrap(Gridsystem).
 2. Visual Studio Code.

@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     font-family: 'Open Sans', sans-serif;
     margin: 0;
@@ -8,6 +12,10 @@ body{
 a{
     color: #fff;
     text-decoration: none;
+}
+
+.text-center{
+    text-align: center;
 }
 
 .img-fluid{
@@ -36,9 +44,8 @@ SOMENTE LIDOS POR LEITORES DE TELA, MAS NÃO VISIVEL PARA O USUARIO */
 
 /*------------ HEADER STYLES ---------------------------------------------------- */
 
-.bg-header{
+.bg-blue{
     background-color: #3199dc;
-    padding-top: 1rem;
 }
 
 .logo-block{
@@ -236,21 +243,146 @@ header .row{
     margin: unset;
 }
 
+.third-section-content .title-list-link{
+    color: #3199dc;
+}
+
+.third-section-content ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.third-section-content ul li a{
+    text-decoration: none;
+    color: #1e1e1e;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.third-section-content ul li{
+    margin-bottom: 1rem;
+}
+
+.third-section-content ul li::after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: #1e1e1e36;
+    margin-top: 2rem;
+}
+
+.third-section-content .block-flex--first h2{
+    color: rgb(211 85 70 / 77%);
+}
+
+.title-block-flex{
+    color: rgb(211 85 70 / 77%);
+    display: table-cell;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.third-section-content .block-flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.third-section-content .block-flex .block{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+
+.block-flex--first .block p{
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.btn-back-to-top{
+    padding: 1rem;
+    text-align: end;
+
+}
+
+.back-to-top a{
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 20px;
+    text-align: end;
+}
+
+.back-to-top a:hover{
+    text-decoration: none;
+}
+
+.back-to-top.pt-25{
+    padding-top: 25rem;
+}
+
+.bg-footer{
+    background: #283c4f;
+    color: #fff;
+}
+
+.link-footer{
+    text-decoration: underline;
+}
+.link-footer:hover{
+    color: #fff;
+}
+
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
 }
 
 @media screen and (max-width: 992px){
+
+    header .row {
+        display: block;
+    }
+
     .social-pic a,
-    .logo-block small {
+    .logo-block small,
+    .flickity-button,
+    .publicidade-block {
         display: none;
     }
 
     .hamburguer-icon {
         position: absolute;
-        top: 1rem;
+        top: 2rem;
+        z-index: 1;
     }
+
+    .card{
+        margin-bottom: 2rem;
+    }
+
+    .carousel{
+        background: transparent;
+    }
+
+    .caption {
+        
+        bottom: -120px;
+        padding: 1rem;
+    }
+
+    .flickity-viewport{
+        height: 30rem !important;
+    }
+
+    .caption p {
+        color: #1e1e1e;
+        font-size: 20px;
+    }
+
 
 }
 
