@@ -95,7 +95,7 @@ header .row{
   height: 100%;
   width: 0;
   position: fixed;
-  z-index: 1;
+  z-index: 5;
   top: 0;
   left: 0;
   background-color: #3199dc;
@@ -190,6 +190,11 @@ header .row{
     font-weight: bold;
 }
 
+.flickity-page-dots .dot.is-selected {
+    opacity: 1;
+    background: #3199dc;
+}
+
 
 /* ===== CONTENT =========================================================*/
 
@@ -200,10 +205,10 @@ header .row{
 }
 
 .card-caption span{
-    background: rgb(211 85 70 / 77%);
+    background: rgb(211 85 70);
     padding: 5px;
     text-transform: uppercase;
-    font-weight: bold;
+    font-weight: 100;
     border-radius: 3px;
 }
 
@@ -347,11 +352,26 @@ header .row{
         display: block;
     }
 
+    body{
+        background: #eee;
+    }
+
     .social-pic a,
     .logo-block small,
     .flickity-button,
-    .publicidade-block {
+    .publicidade-block,
+    .first-section-content h2 {
         display: none;
+    }
+
+    .card-description p {
+        font-size: 18px;
+    }
+
+    .card-description h2,
+    .third-section-content .title-list-link {
+        margin-bottom: 1rem;
+        font-weight: 600;
     }
 
     .hamburguer-icon {
@@ -369,18 +389,29 @@ header .row{
     }
 
     .caption {
-        
-        bottom: -120px;
-        padding: 1rem;
-    }
-
-    .flickity-viewport{
-        height: 30rem !important;
+        bottom: -100px;
+        padding: 1px;
     }
 
     .caption p {
         color: #1e1e1e;
-        font-size: 20px;
+        font-size: 25px;
+    }
+
+    .flickity-viewport{
+        height: 32rem !important;
+    }
+
+    .third-section-content .block-flex {
+        flex-direction: column;
+    }
+
+    .third-section-content{
+        margin-top: -8rem;
+    }
+
+    footer img{
+        display: none;
     }
 
 
