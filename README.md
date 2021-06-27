@@ -1,5 +1,5 @@
 
-# Teste à vaga de desenvolvedor Front-end
+# Teste vaga de desenvolvedor Front-end
 
 ### Overview
 
