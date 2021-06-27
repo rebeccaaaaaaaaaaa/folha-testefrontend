@@ -8,7 +8,9 @@
 3. Utilizei o bootrasp 4, mas somente o sistema de grid.
 4. Fonte utilizada foi a OpenSans.
 
+## Link layout deploy
 
+https://folhatestefront.netlify.app/
 
 ### Ferramentaas e linguagens
 
