@@ -341,6 +341,10 @@ header .row{
     color: #fff;
 }
 
+.ads-small-scren{
+    display: none;
+}
+
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
@@ -414,6 +418,13 @@ header .row{
         display: none;
     }
 
+    .ads-small-scren{
+        display: block;
+    }
+
+    #flex-sm{
+        display: inline-block;
+    }
 
 }
 
@@ -425,6 +436,28 @@ header .row{
 @media (min-width: 768px) and (max-width: 1024px) {
   
     /* CSS */
-    
+
+    .ads-small-scren{
+        text-align: end;
+
+    }
+
+    .third-section-content .block-flex {
+        display: block;
+       
+    }
+
+    .last-block-flex {
+        width: 55%;
+        margin-top: -7rem;
+    }
+
+    .caption {
+        bottom: -50px;
+    }
+
+    .caption p {
+        font-size: 20px;
+    }
   }
   
