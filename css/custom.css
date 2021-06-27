@@ -422,9 +422,11 @@ header .row{
         display: block;
     }
 
-    #flex-sm{
-        display: inline-block;
+    .small-publicidade{
+        display: none;
     }
+
+    
 
 }
 
@@ -433,9 +435,17 @@ header .row{
   ##Screen = B/w 768px to 1024px
 */
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
   
     /* CSS */
+
+    #flex-sm{
+        display: none;
+    }
+
+    .small-publicidade{
+        display: block;
+    }
 
     .ads-small-scren{
         text-align: end;
@@ -453,11 +463,22 @@ header .row{
     }
 
     .caption {
-        bottom: -50px;
+        bottom: -5px;
     }
 
     .caption p {
         font-size: 20px;
+        color: #fff;
     }
+
+    .social-pic a {
+        display: inline-flex !important;
+        margin-top: 3rem;
+    }
+
+    .label-social{
+        display: none;
+    }
+
   }
   
